@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Manjari G</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #84a6e9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8a8a8a;
+            color: #fff;
+            text-align: left;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        .header-text {
+            margin-left: 140px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .profile-picture {
+                width: 80px;
+                height: 80px;
+                left: 10px;
+            }
+
+            .header-text {
+                margin-left: 110px;
+            }
+
+            .section-content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src=https://i.ibb.co/1GDwBTWB/IMG-20250324-185605.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="header-text">
+            <h1>Sarumathi R</h1>
+            <p>I am a Software Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2><u>About Me</u></h2>
+            <p>I'm a <b>web development</b> expert passionate about creating dynamic and user-friendly websites.
+                I aim to craft high-performance web applications that enhance user experience.
+                I stay up to date with the latest trends in web development and enjoy helping others learn
+                more about building secure and scalable websites.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><u>Education</u></h2>
+            <p>Madras University - BCA</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2><u>Skills</u></h2>
+            <ul>
+                <li>React</li>
+                <li>MERN</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>ML & AI</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2><u>Projects</u></h2>
+            <ul>
+                <li><a href="#">Portfolio Website</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2>Resume</h2>
+                <a href="https://online.flippingbook.com/view/722413623/class="download-button">Download Resume</a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sarumathi R</p>
+    </footer>
+
+    <script>
+        // Smooth scroll on navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
